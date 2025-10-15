@@ -1,101 +1,103 @@
-Customer Churn Insights (Analyst Perspective)
-Tools: SQL | Tableau | Excel
-Project Overview
+### Customer Churn Insights (Analyst Perspective)
 
-This project explores customer churn from a business and data analytics perspective. The primary goal is to identify which customer segments are most at risk of churning and to provide clear, data-driven insights that support retention strategies. The analysis integrates SQL-based exploration with Tableau visualization to demonstrate an end-to-end analytical workflow.
+Tools Used: SQL | Tableau | Excel
+Status: SQL Analysis Complete | Tableau Dashboard In Progress
+Expected Completion: December 2025
 
-Churn analysis is a key focus for organizations that rely on recurring revenue or subscription models. By understanding why customers leave, businesses can develop targeted actions to reduce churn and improve overall customer lifetime value.
+### Overview
 
-Objectives
+This project analyzes customer churn from an analytical and business perspective. The objective is to identify the key factors influencing customer attrition and to provide actionable insights that can support retention strategies.
+
+The analysis integrates SQL for data extraction and preparation with Tableau for visualization, illustrating how technical and business-oriented tools combine to drive insight.
+
+Churn analysis is a critical business problem for organizations with subscription or recurring-revenue models. Understanding who leaves and why allows companies to take targeted actions to improve retention, increase revenue, and strengthen customer relationships.
+
+### Objectives
 
 Clean and prepare raw customer data for analysis.
 
-Calculate churn rates by customer type, plan, and region.
+Calculate churn rates across various customer segments.
 
-Identify key churn drivers such as tenure, plan type, and engagement level.
+Identify key churn drivers such as plan type, tenure, and engagement.
 
-Build visual dashboards to communicate findings and trends.
+Develop visual dashboards to communicate findings clearly to stakeholders.
 
-Data and Methodology
-Data Source
+### Data and Methodology
+### Data Source
 
-The dataset is stored in a relational SQLite database (customer_data.db) that contains customer information, subscription details, and churn indicators.
+The dataset is stored in a relational SQLite database (customer_data.db) containing customer profiles, subscription details, and churn indicators.
 
-SQL Analysis
+### SQL Analysis
 
-All analytical preparation was performed in SQL to ensure accurate data validation and calculation before visualization.
-Key steps in the analysis include:
+The analysis workflow was designed to replicate a real-world analytics process.
+The SQL file (churn_analysis.sql) includes the following steps:
 
-Data Cleaning – Identified and removed missing or inconsistent records.
+### Data Cleaning and Validation – Identified nulls, duplicates, and inconsistent entries.
 
-Data Integration – Joined customer and subscription tables to create a unified dataset.
+### Data Integration – Joined multiple tables to create a consolidated customer dataset.
 
-Churn Calculation – Used aggregation and conditional logic to determine churn rate by group.
+### Churn Calculation – Used conditional aggregation to compute churn rates per group.
 
-Segmentation – Categorized customers based on tenure, plan, and region.
+### Segmentation – Categorized customers by plan, tenure, and region for pattern discovery.
 
-Trend Analysis – Evaluated churn trends over time to identify emerging patterns.
+### Trend Analysis – Analyzed churn trends over time to highlight emerging issues.
 
-The full query workflow can be viewed in churn_analysis.sql
+All SQL logic and results are available in the file churn_analysis.sql
 .
 
-Tableau Dashboard (In Progress)
+### Tableau Dashboard (In Progress)
 
-The Tableau dashboard is currently being developed to visualize the results from the SQL analysis.
-Once complete, it will include:
+The Tableau dashboard is being developed to visualize and communicate the findings from the SQL analysis.
+When complete, it will include interactive views and summaries such as:
 
-Churn rate by customer type and region.
+Churn Rate by Segment: Customer type, region, and plan.
 
-Tenure versus churn analysis.
+Tenure and Churn: Relationship between customer longevity and churn behavior.
 
-Plan performance and retention metrics.
+Revenue Impact: Effect of churn on revenue by plan category.
 
-Revenue impact of churn for high-value segments.
+Retention Focus Areas: Visual indicators for high-risk customer groups.
 
-The current version of the Tableau workbook is available in
-Customer_Churn_Dashboard (in-progress).twb
-.
-A final dashboard will be published upon completion.
+Current version available here: Customer_Churn_Dashboard (in-progress).twb
 
-Key Insights (Preliminary Findings)
+###  Insights (Preliminary)
 
-Customers with shorter tenure and lower engagement exhibit the highest churn rates.
+Early insights from the SQL analysis show several important trends:
 
-Higher-value plans experience lower churn but greater revenue loss when churn occurs.
+Customers with shorter tenure and lower engagement have the highest churn rates.
 
-Certain regions show consistently higher churn, indicating potential service or pricing challenges.
+High-value plans show lower churn but higher financial impact when customers leave.
 
-Retention strategies should focus on improving engagement among newer and low-activity customers.
+Certain regions experience consistently higher churn, suggesting potential service or pricing issues.
 
-These initial findings will be expanded and refined in Tableau once the visualization phase is complete.
+Re-engagement efforts may be most effective when targeted toward mid-tenure customers with declining activity.
 
-Next Steps
+These preliminary insights will be expanded and visually represented once the Tableau dashboard is complete.
 
-Finalize Tableau dashboard and publish on Tableau Public.
+### Next Steps
 
-Add summary metrics and downloadable outputs (CSV/PNG).
+Complete Tableau dashboard design and publish to Tableau Public.
 
-Document full retention recommendations based on final results.
+Add KPI summaries and data exports for reproducibility.
 
-Business Impact
+Refine insights based on visual exploration.
 
-This project demonstrates how SQL and Tableau can be used together to translate raw operational data into meaningful business intelligence.
-The workflow reflects a typical analyst’s process — extracting, cleaning, and analyzing data, then converting findings into actionable insights for decision-makers.
+Incorporate business recommendations and commentary into the final version.
 
-Files Included
+### Business Impact
+
+This project demonstrates a structured analyst workflow — from data extraction and cleaning in SQL to business insight generation and visualization in Tableau.
+It reflects a practical approach used in real analytics teams: identify the problem, analyze the data, and communicate actionable findings clearly to decision-makers.
+
+### Files Included
 File	Description
-churn_analysis.sql	SQL file containing all analytical queries and calculations.
-customer_data.db	Database used for the SQL analysis.
+churn_analysis.sql	SQL script containing all data cleaning, transformations, and analysis queries.
+customer_data.db	SQLite database used for the analysis.
 Customer_Churn_Dashboard (in-progress).twb	Tableau workbook currently under development.
-README.md	Project documentation and overview.
-Project Status
+README.md	Project overview and documentation.
 
-SQL Analysis: Complete
-Tableau Dashboard: In progress
-Expected Completion: December 2025
+### Jake Smith
+MSc in Applied Economics | BA in Psychology 
+Email:[jakesmith648@gmail.com]
 
-Jake Smith
-MSc in Applied Economics | Data Analyst
-Email: [your.email@example.com
-]
-LinkedIn: linkedin.com/in/your-profile
+LinkedIn: [https://www.linkedin.com/in/jacob-smith-a46318153/]
